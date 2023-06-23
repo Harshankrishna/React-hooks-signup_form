@@ -9,7 +9,7 @@ const schema = yup.object({
     .string()
     .required("Phone number is a required field")
     .matches(
-      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+      /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
       "Phone number is not valid!."
     ),
   email: yup
